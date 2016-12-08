@@ -1,0 +1,235 @@
+.parenthesis{
+	quotes: '(' ')';
+}
+
+#footer{
+	font-family: 'Bree Serif', sans-serif;
+	text-align: center;
+	padding-top: 20px;
+	margin-top: 30px;
+}
+
+
+/*PRELOADER*/
+
+#preloader {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    z-index: 100;
+
+    background: #fcfcfc;                
+} 
+.cssload-triangles {
+    height: 79px;
+    width: 88px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cssload-tri {
+    position: absolute;
+    border-top: 26px solid rgb(227,66,52);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 0px;
+    animation: cssload-pulse 862.5ms ease-in infinite;
+}
+.cssload-tri.cssload-invert {
+    border-top: 0px;
+    border-bottom: 26px solid rgb(227,66,52);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+.cssload-tri:nth-child(1) {
+    left: 29px;
+}
+.cssload-tri:nth-child(2) {
+    left: 15px;
+    top: 26px;
+    animation-delay: -143.75ms;
+}
+.cssload-tri:nth-child(3) {
+    left: 29px;
+    top: 26px;
+}
+.cssload-tri:nth-child(4) {
+    left: 44px;
+    top: 26px;
+    animation-delay: -718.75ms;
+}
+.cssload-tri:nth-child(5) {
+    top: 53px;
+    animation-delay: -287.5ms;
+}
+.cssload-tri:nth-child(6) {
+    top: 53px;
+    left: 15px;
+    animation-delay: -287.5ms;
+}
+.cssload-tri:nth-child(7) {
+    top: 53px;
+    left: 29px;
+    animation-delay: -431.25ms;
+}
+.cssload-tri:nth-child(8) {
+    top: 53px;
+    left: 44px;
+    animation-delay: -575ms;
+}
+.cssload-tri:nth-child(9) {
+    top: 53px;
+    left: 58px;
+    animation-delay: -575ms;
+}
+
+
+@keyframes cssload-pulse {
+    0% {
+        opacity: 1;
+    }
+    16.666% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+/*PRELOADER*/
+
+
+
+/* Mendeleev Slider */
+
+#ninja-slider {
+    width:100%;
+    height: 75%;
+
+    position: absolute;
+    z-index: -1;
+    
+    background:#FFF;
+    padding: 0!important;
+
+    box-sizing:border-box;
+    margin:0 auto;
+}
+div.slider-inner {
+	height: 100%;
+    font-size:0px;
+    position:relative;
+    box-sizing:border-box;
+    margin:0 auto;
+}
+
+#ninja-slider ul {
+	height: 100%;
+
+    position:relative;
+    background:black;
+    padding-top:0px;
+    box-sizing:border-box;
+
+    list-style:none;
+}
+
+#ninja-slider li {    
+    width:100%;
+    height:100%;
+
+    position: absolute;
+    top:0;
+    left:0;
+
+    font-size:8px;
+    list-style:none;
+
+    opacity:0;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+#ninja-slider li::after {
+    width:100%;
+    height:100%;
+
+    position:absolute;
+    top:0;
+    left:0;
+
+    content:"";
+
+    display:block;
+    background:transparent url(../../../imgs/gray-overlay.png) repeat 0 0;
+}
+
+#ninja-slider li.ns-show {
+    opacity:1;
+}
+
+/* --------- slider image ------- */  
+#ninja-slider .ns-img {
+    width:100%;
+    height:100%;
+
+    position: absolute;
+
+    display:block;
+    background:rgba(0,0,0,0.8) no-repeat center 20%;
+    background-size:contain;
+    border-radius:4px;
+	box-shadow: inset 0 -4px 8px rgba(0,0,0,.7);
+
+    cursor:default;
+}
+
+/*---------- Captions -------------------*/
+
+#ninja-slider div.caption {
+    width: 74.5%;
+
+    position:absolute;
+    bottom: 16%;
+    left: 12.5%;
+
+    font-family: 'Bree Serif', sans-serif;
+    font-size: 7.5em;
+    line-height: 125%;
+    color: rgba(255,255,255,0.8);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align:center;
+    text-shadow: 1px 1px rgba(0,0,0,0.8);
+}
+#ninja-slider div#start{
+	font-size: 10em;
+}
+
+#ninja-slider li[class*='-s'] div.caption {
+    animation: titleAnimation 7s linear both;
+}
+
+@keyframes titleAnimation { 
+	0% { opacity:0; }
+	10% { opacity:0;transform: translateY(-20%);}
+	20% { opacity:1;transform: translateY(0%);}
+	70% {opacity:1;transform: translateY(0%);}
+	80% {opacity:0;transform: translateY(100%);}
+	100% {opacity:0;transform: translateY(100%);}
+}
+
+/*mendeleev-Slider*/
+
+@media screen and (min-width: 1460px) {
+    article {
+    	width: 50%;
+    }
+    #ninja-slider div.caption {
+    width:53%;
+    left: 23.4%;
+	}
+}

@@ -1,0 +1,132 @@
+*{
+	padding: 0;
+	margin: 0;
+    -webkit-user-select: none;
+}
+body{
+	height: 100%;
+	width: 100%;
+
+    background-color: #c0c5ce;
+
+    cursor: url(../../../imgs/mac_cursor.png), auto;
+}
+main{
+    position: relative;
+
+    display: table;
+    padding-top: 25px;
+}
+main, td table{
+	margin: auto;
+}
+small{
+	font-size: 9px;
+
+	padding: 2px 0 0 5px;
+}
+small{
+	text-align: left;
+}
+big, bdo, bdi, p, tfoot td{
+	text-align: center;
+}
+big{
+	font-size: 20px;
+}
+big{
+    line-height: 20px;
+}
+bdo, bdi, th{
+	width: 56px;
+}
+bdo, bdi{
+	font-size: 7px;
+	line-height: 8px;
+
+	padding-top: 2px;
+}
+bdo{
+	direction: ltr;
+}
+bdi{
+	direction: rtl;
+}
+bdo, bdi, p, tfoot a{
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+th:nth-child(n+2) p{
+	padding-bottom: 2px;
+}
+div p:first-child{
+    height: 20px;
+
+	font-size: 17px;
+
+	padding: 5px 0 0 10px;
+}
+div p:nth-child(n+3), .p1{
+	font-size: 15px;
+}
+small, big, bdo, bdi, tbody td a{
+	display: block;
+}
+a, .numb{
+    color: #cfd3d4;
+	text-decoration: none;
+}
+tbody td a{
+	height: 56px;
+}
+tfoot a{
+	width: 100px;
+
+    font-size: 12px;
+    font-weight: bold;
+    white-space: nowrap;
+
+	display: inline-block;
+    padding: 10px 5px;
+    border-radius: 6px;
+}
+tr th:first-child p{
+    text-align: right;
+}
+td a:active{
+    transform: scale(.96, .96);
+}
+a, td[class~=numb] {
+    background: radial-gradient(#252b2b, #353939);
+    box-shadow: 0 1px 3px rgba(15,15,15,1);
+}
+a:hover, td[class~=numb]:hover {
+    color: #505155;
+
+    background: radial-gradient(#f0f0f0, #fdfdfd);
+}
+tfoot a{
+    
+}
+q{
+	quotes: '[' ']';
+}
+
+h2{
+    padding-left: 2%;
+    display: none;
+}
+
+div h2:last-child{
+    display: block;
+    padding-left: 1%;
+}
+
+@media screen and (min-width: 2500px){
+    bdo, bdi, small, th p{
+        font-size: 5px;
+    }
+    div p:nth-child(2){
+    	font-size: 30px;
+    }
+}

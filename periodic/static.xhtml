@@ -1,0 +1,2498 @@
+<!DOCTYPE html[<!ENTITY link "https://en.wikipedia.org/wiki/">]>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <base target="_blank"/>
+        <script src="scripts/jquery-2.1.4.min.js"/>
+        <script src="scripts/static.js"/>
+        <script src="scripts/staticStars.js"/>
+        <script src="scripts/lib.js"/>
+        <script src="scripts/Detector.js"/>
+        <script src="scripts/preloader.js"/>
+        <style>
+			@import url(content/style/css/static/css.bundle);
+		</style>
+		<title>Static Periodic Table Of The Elements</title>
+    </head>
+    <body onload="onLoad()">
+        <div id="preloader">
+            <div class="cssload-triangles">
+                <div class="cssload-tri cssload-invert"></div>
+                <div class="cssload-tri cssload-invert"></div>
+                <div class="cssload-tri"></div>
+                <div class="cssload-tri cssload-invert"></div>
+                <div class="cssload-tri cssload-invert"></div>
+                <div class="cssload-tri"></div>
+                <div class="cssload-tri cssload-invert"></div>
+                <div class="cssload-tri"></div>
+                <div class="cssload-tri cssload-invert"></div>
+            </div>
+        </div>
+        <main>
+            <a id="color" onclick="addRemove()"></a>
+            <div class="illuminator">
+            </div>
+            <table>
+                    <caption>PERIODIC TABLE OF THE ELEMENTS</caption>
+                    <tbody>
+                        <tr>
+                            <th></th>
+                            <th>1</th>
+                            <th colspan="16"></th>
+                            <th>18</th>
+                        </tr>
+                        <tr>
+                            <th class="horiz">1</th>
+                            <td>
+                                <a class="nonmet" title="Hydrogen" href="&link;Hydrogen">
+                                    <ruby>
+                                        <rt>1</rt>
+                                        <rp>!Oops!</rp>
+                                        H
+                                    </ruby>
+                                    <strong>Hydrogen</strong>
+                                    <tt>1.0079</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>1</rt>
+                                        <rp>!Oops!</rp>
+                                        H
+                                    </ruby>
+                                    <strong>Hydrogen</strong>
+                                    <tt>1.0079</tt>
+                                </div>
+                            </td>
+                            <th>2</th>
+                            <th colspan="10"></th>
+                            <th>13</th>
+                            <th>14</th>
+                            <th>15</th>
+                            <th>16</th>
+                            <th>17</th>
+                            <td>
+                                <a class="noblegas" title="Helium" href="&link;Helium">
+                                    <ruby>
+                                        <rt>2</rt>
+                                        <rp>!Oops!</rp>
+                                        He
+                                    </ruby>
+                                    <strong>Helium</strong>
+                                    <tt>4.0026</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>2</rt>
+                                        <rp>!Oops!</rp>
+                                        He
+                                    </ruby>
+                                    <strong>Helium</strong>
+                                    <tt>4.0026</tt>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="horiz">2</th>
+                            <td>
+                                <a class="alkalimet" title="Lithium" href="&link;Lithium">
+                                    <ruby>
+                                        <rt>3</rt>
+                                        <rp>!Oops!</rp>
+                                        Li
+                                    </ruby>
+                                    <strong>Lithium</strong>
+                                    <tt>6.941</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>3</rt>
+                                        <rp>!Oops!</rp>
+                                        Li
+                                    </ruby>
+                                    <strong>Lithium</strong>
+                                    <tt>6.941</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="alkalinemet" title="Beryllium" href="&link;Beryllium">
+                                    <ruby>
+                                        <rt>4</rt>
+                                        <rp>!Oops!</rp>
+                                        Be
+                                    </ruby>
+                                    <strong>Beryllium</strong>
+                                    <tt>9.0122</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>4</rt>
+                                        <rp>!Oops!</rp>
+                                        Be
+                                    </ruby>
+                                    <strong>Beryllium</strong>
+                                    <tt>9.0122</tt>
+                                </div>
+                            </td>
+                            <th colspan="10"></th>
+                            <td>
+                                <a class="semimet" title="Boron" href="&link;Boron">
+                                    <ruby>
+                                        <rt>5</rt>
+                                        <rp>!Oops!</rp>
+                                        B
+                                    </ruby>
+                                    <strong>Boron</strong>
+                                    <tt>10.811</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>5</rt>
+                                        <rp>!Oops!</rp>
+                                        B
+                                    </ruby>
+                                    <strong>Boron</strong>
+                                    <tt>10.811</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="nonmet" title="Carbon" href="&link;Carbon">
+                                    <ruby>
+                                        <rt>6</rt>
+                                        <rp>!Oops!</rp>
+                                        C
+                                    </ruby>
+                                    <strong>Carbon</strong>
+                                    <tt>12.0107</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>6</rt>
+                                        <rp>!Oops!</rp>
+                                        C
+                                    </ruby>
+                                    <strong>Carbon</strong>
+                                    <tt>12.0107</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="nonmet" title="Nitrogen" href="&link;Nitrogen">
+                                    <ruby>
+                                        <rt>7</rt>
+                                        <rp>!Oops!</rp>
+                                        N
+                                    </ruby>
+                                    <strong>Nitrogen</strong>
+                                    <tt>14.0067</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>7</rt>
+                                        <rp>!Oops!</rp>
+                                        N
+                                    </ruby>
+                                    <strong>Nitrogen</strong>
+                                    <tt>14.0067</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="nonmet" title="Oxygen" href="&link;Oxygen">
+                                    <ruby>
+                                        <rt>8</rt>
+                                        <rp>!Oops!</rp>
+                                        O
+                                    </ruby>
+                                    <strong>Oxygen</strong>
+                                    <tt>15.9994</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>8</rt>
+                                        <rp>!Oops!</rp>
+                                        O
+                                    </ruby>
+                                    <strong>Oxygen</strong>
+                                    <tt>15.9994</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="halogen" title="Fluorine" href="&link;Fluorine">
+                                    <ruby>
+                                        <rt>9</rt>
+                                        <rp>!Oops!</rp>
+                                        F
+                                    </ruby>
+                                    <strong>Fluorine</strong>
+                                    <tt>18.9984</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>9</rt>
+                                        <rp>!Oops!</rp>
+                                        F
+                                    </ruby>
+                                    <strong>Fluorine</strong>
+                                    <tt>18.9984</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="noblegas" title="Neon" href="&link;Neon">
+                                    <ruby>
+                                        <rt>10</rt>
+                                        <rp>!Oops!</rp>
+                                        Ne
+                                    </ruby>
+                                    <strong>Neon</strong>
+                                    <tt>20.1797</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>10</rt>
+                                        <rp>!Oops!</rp>
+                                        Ne
+                                    </ruby>
+                                    <strong>Neon</strong>
+                                    <tt>20.1797</tt>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="horiz">3</th>
+                            <td>
+                                <a class="alkalimet" title="Natrium (Sodium)" href="&link;Sodium">
+                                    <ruby>
+                                        <rt>11</rt>
+                                        <rp>!Oops!</rp>
+                                        Na
+                                    </ruby>
+                                    <strong>Sodium</strong>
+                                    <tt>22.9897</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>11</rt>
+                                        <rp>!Oops!</rp>
+                                        Na
+                                    </ruby>
+                                    <strong>Sodium</strong>
+                                    <tt>22.9897</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="alkalinemet" title="Magnesium" href="&link;Magnesium">
+                                    <ruby>
+                                        <rt>12</rt>
+                                        <rp>!Oops!</rp>
+                                        Mg
+                                    </ruby>
+                                    <strong>Magnesium</strong>
+                                    <tt>24.305</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>12</rt>
+                                        <rp>!Oops!</rp>
+                                        Mg
+                                    </ruby>
+                                    <strong>Magnesium</strong>
+                                    <tt>24.305</tt>
+                                </div>
+                            </td>
+                            <th>3</th>
+                            <th>4</th>
+                            <th>5</th>
+                            <th>6</th>
+                            <th>7</th>
+                            <th>8</th>
+                            <th>9</th>
+                            <th>10</th>
+                            <th>11</th>
+                            <th>12</th>
+                            <td>
+                                <a class="basicmet" title="Aluminum" href="&link;Aluminum">
+                                    <ruby>
+                                        <rt>13</rt>
+                                        <rp>!Oops!</rp>
+                                        Al
+                                    </ruby>
+                                    <strong>Aluminum</strong>
+                                    <tt>26.9815</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>13</rt>
+                                        <rp>!Oops!</rp>
+                                        Al
+                                    </ruby>
+                                    <strong>Aluminum</strong>
+                                    <tt>26.9815</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="semimet" title="Silicon" href="&link;Silicon">
+                                    <ruby>
+                                        <rt>14</rt>
+                                        <rp>!Oops!</rp>
+                                        Si
+                                    </ruby>
+                                    <strong>Silicon</strong>
+                                    <tt>28.0855</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>14</rt>
+                                        <rp>!Oops!</rp>
+                                        Si
+                                    </ruby>
+                                    <strong>Silicon</strong>
+                                    <tt>28.0855</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="nonmet" title="Phosphorus" href="&link;Phosphorus">
+                                    <ruby>
+                                        <rt>15</rt>
+                                        <rp>!Oops!</rp>
+                                        P
+                                    </ruby>
+                                    <strong>Phosphorus</strong>
+                                    <tt>30.9738</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>15</rt>
+                                        <rp>!Oops!</rp>
+                                        P
+                                    </ruby>
+                                    <strong>Phosphorus</strong>
+                                    <tt>30.9738</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="nonmet" title="Sulfur" href="&link;Sulfur">
+                                    <ruby>
+                                        <rt>16</rt>
+                                        <rp>!Oops!</rp>
+                                        H
+                                    </ruby>
+                                    <strong>Sulfur</strong>
+                                    <tt>32.065</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>16</rt>
+                                        <rp>!Oops!</rp>
+                                        H
+                                    </ruby>
+                                    <strong>Sulfur</strong>
+                                    <tt>32.065</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="halogen" title="Chlorine" href="&link;Chlorine">
+                                    <ruby>
+                                        <rt>17</rt>
+                                        <rp>!Oops!</rp>
+                                        Cl
+                                    </ruby>
+                                    <strong>Chlorine</strong>
+                                    <tt>35.453</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>17</rt>
+                                        <rp>!Oops!</rp>
+                                        Cl
+                                    </ruby>
+                                    <strong>Chlorine</strong>
+                                    <tt>35.453</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="noblegas" title="Argon" href="&link;Argon">
+                                    <ruby>
+                                        <rt>18</rt>
+                                        <rp>!Oops!</rp>
+                                        Ar
+                                    </ruby>
+                                    <strong>Argon</strong>
+                                    <tt>39.948</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>18</rt>
+                                        <rp>!Oops!</rp>
+                                        Ar
+                                    </ruby>
+                                    <strong>Argon</strong>
+                                    <tt>39.948</tt>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="horiz">4</th>
+                            <td>
+                                <a class="alkalimet" title="Kalium (Potassium)" href="&link;Potassium">
+                                    <ruby>
+                                        <rt>19</rt>
+                                        <rp>!Oops!</rp>
+                                        K
+                                    </ruby>
+                                    <strong>Potassium</strong>
+                                    <tt>39.0983</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>19</rt>
+                                        <rp>!Oops!</rp>
+                                        K
+                                    </ruby>
+                                    <strong>Potassium</strong>
+                                    <tt>39.0983</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="alkalinemet" title="Calcium" href="&link;Calcium">
+                                    <ruby>
+                                        <rt>20</rt>
+                                        <rp>!Oops!</rp>
+                                        Ca
+                                    </ruby>
+                                    <strong>Calcium</strong>
+                                    <tt>40.078</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>20</rt>
+                                        <rp>!Oops!</rp>
+                                        Ca
+                                    </ruby>
+                                    <strong>Calcium</strong>
+                                    <tt>40.078</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Scandium" href="&link;Scandium">
+                                    <ruby>
+                                        <rt>21</rt>
+                                        <rp>!Oops!</rp>
+                                        Sc
+                                    </ruby>
+                                    <strong>Scandium</strong>
+                                    <tt>44.9559</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>21</rt>
+                                        <rp>!Oops!</rp>
+                                        Sc
+                                    </ruby>
+                                    <strong>Scandium</strong>
+                                    <tt>44.9559</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Titanium" href="&link;Titanium">
+                                    <ruby>
+                                        <rt>22</rt>
+                                        <rp>!Oops!</rp>
+                                        Ti
+                                    </ruby>
+                                    <strong>Titanium</strong>
+                                    <tt>47.867</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>22</rt>
+                                        <rp>!Oops!</rp>
+                                        Ti
+                                    </ruby>
+                                    <strong>Titanium</strong>
+                                    <tt>47.867</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Vanadium" href="&link;Vanadium">
+                                    <ruby>
+                                        <rt>23</rt>
+                                        <rp>!Oops!</rp>
+                                        V
+                                    </ruby>
+                                    <strong>Vanadium</strong>
+                                    <tt>50.9415</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>23</rt>
+                                        <rp>!Oops!</rp>
+                                        V
+                                    </ruby>
+                                    <strong>Vanadium</strong>
+                                    <tt>50.9415</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Chromium" href="&link;Chromium">
+                                    <ruby>
+                                        <rt>24</rt>
+                                        <rp>!Oops!</rp>
+                                        Cr
+                                    </ruby>
+                                    <strong>Chromium</strong>
+                                    <tt>51.9961</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>24</rt>
+                                        <rp>!Oops!</rp>
+                                        Cr
+                                    </ruby>
+                                    <strong>Chromium</strong>
+                                    <tt>51.9961</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Manganese" href="&link;Manganese">
+                                    <ruby>
+                                        <rt>25</rt>
+                                        <rp>!Oops!</rp>
+                                        Mn
+                                    </ruby>
+                                    <strong>Manganese</strong>
+                                    <tt>54.938</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>25</rt>
+                                        <rp>!Oops!</rp>
+                                        Mn
+                                    </ruby>
+                                    <strong>Manganese</strong>
+                                    <tt>54.938</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Ferrum (Iron)" href="&link;Iron">
+                                    <ruby>
+                                        <rt>26</rt>
+                                        <rp>!Oops!</rp>
+                                        Fe
+                                    </ruby>
+                                    <strong>Iron</strong>
+                                    <tt>55.845</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>26</rt>
+                                        <rp>!Oops!</rp>
+                                        Fe
+                                    </ruby>
+                                    <strong>Iron</strong>
+                                    <tt>55.845</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Cobalt" href="&link;Cobalt">
+                                    <ruby>
+                                        <rt>27</rt>
+                                        <rp>!Oops!</rp>
+                                        Co
+                                    </ruby>
+                                    <strong>Cobalt</strong>
+                                    <tt>58.9332</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>27</rt>
+                                        <rp>!Oops!</rp>
+                                        Co
+                                    </ruby>
+                                    <strong>Cobalt</strong>
+                                    <tt>58.9332</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Nickel" href="&link;Nickel">
+                                    <ruby>
+                                        <rt>28</rt>
+                                        <rp>!Oops!</rp>
+                                        Ni
+                                    </ruby>
+                                    <strong>Nickel</strong>
+                                    <tt>58.6934</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>28</rt>
+                                        <rp>!Oops!</rp>
+                                        Ni
+                                    </ruby>
+                                    <strong>Nickel</strong>
+                                    <tt>58.6934</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Cuprum (Copper)" href="&link;Copper">
+                                    <ruby>
+                                        <rt>29</rt>
+                                        <rp>!Oops!</rp>
+                                        Cu
+                                    </ruby>
+                                    <strong>Copper</strong>
+                                    <tt>63.546</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>29</rt>
+                                        <rp>!Oops!</rp>
+                                        Cu
+                                    </ruby>
+                                    <strong>Copper</strong>
+                                    <tt>63.546</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Zinc" href="&link;Zinc">
+                                    <ruby>
+                                        <rt>30</rt>
+                                        <rp>!Oops!</rp>
+                                        Zn
+                                    </ruby>
+                                    <strong>Zinc</strong>
+                                    <tt>65.39</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>30</rt>
+                                        <rp>!Oops!</rp>
+                                        Zn
+                                    </ruby>
+                                    <strong>Zinc</strong>
+                                    <tt>65.39</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="basicmet" title="Gallium" href="&link;Gallium">
+                                    <ruby>
+                                        <rt>31</rt>
+                                        <rp>!Oops!</rp>
+                                        Ga
+                                    </ruby>
+                                    <strong>Gallium</strong>
+                                    <tt>69.723</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>31</rt>
+                                        <rp>!Oops!</rp>
+                                        Ga
+                                    </ruby>
+                                    <strong>Gallium</strong>
+                                    <tt>69.723</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="semimet" title="Germanium" href="&link;Germanium">
+                                    <ruby>
+                                        <rt>32</rt>
+                                        <rp>!Oops!</rp>
+                                        Ge
+                                    </ruby>
+                                    <strong>Germanium</strong>
+                                    <tt>72.64</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>32</rt>
+                                        <rp>!Oops!</rp>
+                                        Ge
+                                    </ruby>
+                                    <strong>Germanium</strong>
+                                    <tt>72.64</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="semimet" title="Arsenic" href="&link;Arsenic">
+                                    <ruby>
+                                        <rt>33</rt>
+                                        <rp>!Oops!</rp>
+                                        As
+                                    </ruby>
+                                    <strong>Arsenic</strong>
+                                    <tt>74.9216</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>33</rt>
+                                        <rp>!Oops!</rp>
+                                        As
+                                    </ruby>
+                                    <strong>Arsenic</strong>
+                                    <tt>74.9216</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="nonmet" title="Selenium" href="&link;Selenium">
+                                    <ruby>
+                                        <rt>34</rt>
+                                        <rp>!Oops!</rp>
+                                        Se
+                                    </ruby>
+                                    <strong>Selenium</strong>
+                                    <tt>78.96</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>34</rt>
+                                        <rp>!Oops!</rp>
+                                        Se
+                                    </ruby>
+                                    <strong>Selenium</strong>
+                                    <tt>78.96</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="halogen" title="Bromine" href="&link;BromineBromine">
+                                    <ruby>
+                                        <rt>35</rt>
+                                        <rp>!Oops!</rp>
+                                        Br
+                                    </ruby>
+                                    <strong>Bromine</strong>
+                                    <tt>79.904</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>35</rt>
+                                        <rp>!Oops!</rp>
+                                        Br
+                                    </ruby>
+                                    <strong>Bromine</strong>
+                                    <tt>79.904</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="noblegas" title="Krypton" href="&link;Krypton">
+                                    <ruby>
+                                        <rt>36</rt>
+                                        <rp>!Oops!</rp>
+                                        Kr
+                                    </ruby>
+                                    <strong>Krypton</strong>
+                                    <tt>83.8</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>36</rt>
+                                        <rp>!Oops!</rp>
+                                        Kr
+                                    </ruby>
+                                    <strong>Krypton</strong>
+                                    <tt>83.8</tt>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="horiz">5</th>
+                            <td>
+                                <a class="alkalimet" title="Rubidium" href="&link;Rubidium">
+                                    <ruby>
+                                        <rt>37</rt>
+                                        <rp>!Oops!</rp>
+                                        Rb
+                                    </ruby>
+                                    <strong>Rubidium</strong>
+                                    <tt>85.4678</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>37</rt>
+                                        <rp>!Oops!</rp>
+                                        Rb
+                                    </ruby>
+                                    <strong>Rubidium</strong>
+                                    <tt>85.4678</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="alkalinemet" title="Strontium" href="&link;Strontium">
+                                    <ruby>
+                                        <rt>38</rt>
+                                        <rp>!Oops!</rp>
+                                        Sc
+                                    </ruby>
+                                    <strong>Strontium</strong>
+                                    <tt>87.62</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>38</rt>
+                                        <rp>!Oops!</rp>
+                                        Sc
+                                    </ruby>
+                                    <strong>Strontium</strong>
+                                    <tt>87.62</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Yttrium" href="&link;Yttrium">
+                                    <ruby>
+                                        <rt>39</rt>
+                                        <rp>!Oops!</rp>
+                                        Y
+                                    </ruby>
+                                    <strong>Yttrium</strong>
+                                    <tt>88.9059</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>39</rt>
+                                        <rp>!Oops!</rp>
+                                        Y
+                                    </ruby>
+                                    <strong>Yttrium</strong>
+                                    <tt>88.9059</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Zirconium" href="&link;Zirconium">
+                                    <ruby>
+                                        <rt>40</rt>
+                                        <rp>!Oops!</rp>
+                                        Zr
+                                    </ruby>
+                                    <strong>Zirconium</strong>
+                                    <tt>91.224</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>40</rt>
+                                        <rp>!Oops!</rp>
+                                        Zr
+                                    </ruby>
+                                    <strong>Zirconium</strong>
+                                    <tt>91.224</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Niobium" href="&link;Niobium">
+                                    <ruby>
+                                        <rt>41</rt>
+                                        <rp>!Oops!</rp>
+                                        Nb
+                                    </ruby>
+                                    <strong>Niobium</strong>
+                                    <tt>92.9064</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>41</rt>
+                                        <rp>!Oops!</rp>
+                                        Nb
+                                    </ruby>
+                                    <strong>Niobium</strong>
+                                    <tt>92.9064</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Molybdenum" href="&link;Molybdenum">
+                                    <ruby>
+                                        <rt>42</rt>
+                                        <rp>!Oops!</rp>
+                                        Mo
+                                    </ruby>
+                                    <strong>Molybdenum</strong>
+                                    <tt>95.94</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>42</rt>
+                                        <rp>!Oops!</rp>
+                                        Mo
+                                    </ruby>
+                                    <strong>Molybdenum</strong>
+                                    <tt>95.94</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Technetium" href="&link;Technetium">
+                                    <ruby>
+                                        <rt>43</rt>
+                                        <rp>!Oops!</rp>
+                                        Tc
+                                    </ruby>
+                                    <strong>Technetium</strong>
+                                    <tt>98.021</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>43</rt>
+                                        <rp>!Oops!</rp>
+                                        Tc
+                                    </ruby>
+                                    <strong>Technetium</strong>
+                                    <tt>98.021</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Ruthenium" href="&link;Ruthenium">
+                                    <ruby>
+                                        <rt>44</rt>
+                                        <rp>!Oops!</rp>
+                                        Ru
+                                    </ruby>
+                                    <strong>Ruthenium</strong>
+                                    <tt>101.07</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>44</rt>
+                                        <rp>!Oops!</rp>
+                                        Ru
+                                    </ruby>
+                                    <strong>Ruthenium</strong>
+                                    <tt>101.07</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Rhodium" href="&link;Rhodium">
+                                    <ruby>
+                                        <rt>45</rt>
+                                        <rp>!Oops!</rp>
+                                        Rh
+                                    </ruby>
+                                    <strong>Rhodium</strong>
+                                    <tt>102.9055</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>45</rt>
+                                        <rp>!Oops!</rp>
+                                        Rh
+                                    </ruby>
+                                    <strong>Rhodium</strong>
+                                    <tt>102.9055</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Palladium" href="&link;Palladium">
+                                    <ruby>
+                                        <rt>46</rt>
+                                        <rp>!Oops!</rp>
+                                        Pd
+                                    </ruby>
+                                    <strong>Palladium</strong>
+                                    <tt>106.42</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>46</rt>
+                                        <rp>!Oops!</rp>
+                                        Pd
+                                    </ruby>
+                                    <strong>Palladium</strong>
+                                    <tt>106.42</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Argentum (Silver)" href="&link;Silver">
+                                    <ruby>
+                                        <rt>47</rt>
+                                        <rp>!Oops!</rp>
+                                        Ag
+                                    </ruby>
+                                    <strong>Silver</strong>
+                                    <tt>107.8682</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>47</rt>
+                                        <rp>!Oops!</rp>
+                                        Ag
+                                    </ruby>
+                                    <strong>Silver</strong>
+                                    <tt>107.8682</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Cadmium" href="&link;Cadmium">
+                                    <ruby>
+                                        <rt>48</rt>
+                                        <rp>!Oops!</rp>
+                                        Cd
+                                    </ruby>
+                                    <strong>Cadmium</strong>
+                                    <tt>112.411</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>48</rt>
+                                        <rp>!Oops!</rp>
+                                        Cd
+                                    </ruby>
+                                    <strong>Cadmium</strong>
+                                    <tt>112.411</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="basicmet" title="Indium" href="&link;Indium">
+                                    <ruby>
+                                        <rt>49</rt>
+                                        <rp>!Oops!</rp>
+                                        In
+                                    </ruby>
+                                    <strong>Indium</strong>
+                                    <tt>114.818</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>49</rt>
+                                        <rp>!Oops!</rp>
+                                        In
+                                    </ruby>
+                                    <strong>Indium</strong>
+                                    <tt>114.818</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="basicmet" title="Stannum (Tin)" href="&link;Tin">
+                                    <ruby>
+                                        <rt>50</rt>
+                                        <rp>!Oops!</rp>
+                                        Sn
+                                    </ruby>
+                                    <strong>Tin</strong>
+                                    <tt>118.71</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>50</rt>
+                                        <rp>!Oops!</rp>
+                                        Sn
+                                    </ruby>
+                                    <strong>Tin</strong>
+                                    <tt>118.71</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="semimet" title="Stibium (Antimony)" href="&link;Antimony">
+                                    <ruby>
+                                        <rt>51</rt>
+                                        <rp>!Oops!</rp>
+                                        Sb
+                                    </ruby>
+                                    <strong>Antimony</strong>
+                                    <tt>121.76</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>51</rt>
+                                        <rp>!Oops!</rp>
+                                        Sb
+                                    </ruby>
+                                    <strong>Antimony</strong>
+                                    <tt>121.76</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="semimet" title="Tellurium" href="&link;Tellurium">
+                                    <ruby>
+                                        <rt>52</rt>
+                                        <rp>!Oops!</rp>
+                                        Te
+                                    </ruby>
+                                    <strong>Tellurium</strong>
+                                    <tt>127.6</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>52</rt>
+                                        <rp>!Oops!</rp>
+                                        Te
+                                    </ruby>
+                                    <strong>Tellurium</strong>
+                                    <tt>127.6</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="halogen" title="Iodine" href="&link;Iodine">
+                                    <ruby>
+                                        <rt>53</rt>
+                                        <rp>!Oops!</rp>
+                                        I
+                                    </ruby>
+                                    <strong>Iodine</strong>
+                                    <tt>126.9045</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>53</rt>
+                                        <rp>!Oops!</rp>
+                                        I
+                                    </ruby>
+                                    <strong>Iodine</strong>
+                                    <tt>126.9045</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="noblegas" title="Xenon" href="&link;Xenon">
+                                    <ruby>
+                                        <rt>54</rt>
+                                        <rp>!Oops!</rp>
+                                        Xe
+                                    </ruby>
+                                    <strong>Xenon</strong>
+                                    <tt>131.293</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>54</rt>
+                                        <rp>!Oops!</rp>
+                                        Xe
+                                    </ruby>
+                                    <strong>Xenon</strong>
+                                    <tt>131.293</tt>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="horiz">6</th>
+                            <td>
+                                <a class="alkalimet" title="Cesium" href="&link;Cesium">
+                                    <ruby>
+                                        <rt>55</rt>
+                                        <rp>!Oops!</rp>
+                                        Cs
+                                    </ruby>
+                                    <strong>Cesium</strong>
+                                    <tt>132.9055</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>55</rt>
+                                        <rp>!Oops!</rp>
+                                        Cs
+                                    </ruby>
+                                    <strong>Cesium</strong>
+                                    <tt>132.9055</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="alkalinemet" title="Barium" href="&link;Barium">
+                                    <ruby>
+                                        <rt>56</rt>
+                                        <rp>!Oops!</rp>
+                                        Ba
+                                    </ruby>
+                                    <strong>Barium</strong>
+                                    <tt>137.327</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>56</rt>
+                                        <rp>!Oops!</rp>
+                                        Ba
+                                    </ruby>
+                                    <strong>Barium</strong>
+                                    <tt>137.327</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="lanthanide group" title="Lanthanide" href="&link;Lanthanide">
+                                    <ruby>
+                                        57-71
+                                    </ruby>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                    Lanthanides
+                                    </ruby>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Hafnium" href="&link;Hafnium">
+                                    <ruby>
+                                        <rt>72</rt>
+                                        <rp>!Oops!</rp>
+                                        Hf
+                                    </ruby>
+                                    <strong>Hafnium</strong>
+                                    <tt>178.49</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>72</rt>
+                                        <rp>!Oops!</rp>
+                                        Hf
+                                    </ruby>
+                                    <strong>Hafnium</strong>
+                                    <tt>178.49</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Tantalum" href="&link;Tantalum">
+                                    <ruby>
+                                        <rt>73</rt>
+                                        <rp>!Oops!</rp>
+                                        Ta
+                                    </ruby>
+                                    <strong>Tantalum</strong>
+                                    <tt>180.9479</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>73</rt>
+                                        <rp>!Oops!</rp>
+                                        Ta
+                                    </ruby>
+                                    <strong>Tantalum</strong>
+                                    <tt>180.9479</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Wolfram (Tungsten)" href="&link;Tungsten">
+                                    <ruby>
+                                        <rt>74</rt>
+                                        <rp>!Oops!</rp>
+                                        W
+                                    </ruby>
+                                    <strong>Tungsten</strong>
+                                    <tt>183.84</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>74</rt>
+                                        <rp>!Oops!</rp>
+                                        W
+                                    </ruby>
+                                    <strong>Tungsten</strong>
+                                    <tt>183.84</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Rhenium" href="&link;Rhenium">
+                                    <ruby>
+                                        <rt>75</rt>
+                                        <rp>!Oops!</rp>
+                                        Re
+                                    </ruby>
+                                    <strong>Rhenium</strong>
+                                    <tt>186.207</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>75</rt>
+                                        <rp>!Oops!</rp>
+                                        Re
+                                    </ruby>
+                                    <strong>Rhenium</strong>
+                                    <tt>186.207</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Osmium" href="&link;Osmium">
+                                    <ruby>
+                                        <rt>76</rt>
+                                        <rp>!Oops!</rp>
+                                        Os
+                                    </ruby>
+                                    <strong>Osmium</strong>
+                                    <tt>190.23</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>76</rt>
+                                        <rp>!Oops!</rp>
+                                        Os
+                                    </ruby>
+                                    <strong>Osmium</strong>
+                                    <tt>190.23</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Iridium" href="&link;Iridium">
+                                    <ruby>
+                                        <rt>77</rt>
+                                        <rp>!Oops!</rp>
+                                        Ir
+                                    </ruby>
+                                    <strong>Iridium</strong>
+                                    <tt>192.217</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>77</rt>
+                                        <rp>!Oops!</rp>
+                                        Ir
+                                    </ruby>
+                                    <strong>Iridium</strong>
+                                    <tt>192.217</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Platinum" href="&link;Platinum">
+                                    <ruby>
+                                        <rt>78</rt>
+                                        <rp>!Oops!</rp>
+                                        Pt
+                                    </ruby>
+                                    <strong>Platinum</strong>
+                                    <tt>195.078</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>78</rt>
+                                        <rp>!Oops!</rp>
+                                        Pt
+                                    </ruby>
+                                    <strong>Platinum</strong>
+                                    <tt>195.078</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Aurum (Gold)" href="&link;Gold">
+                                    <ruby>
+                                        <rt>79</rt>
+                                        <rp>!Oops!</rp>
+                                        Au
+                                    </ruby>
+                                    <strong>Gold</strong>
+                                    <tt>196.9665</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>79</rt>
+                                        <rp>!Oops!</rp>
+                                        Au
+                                    </ruby>
+                                    <strong>Gold</strong>
+                                    <tt>196.9665</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Mercury" href="&link;Mercury">
+                                    <ruby>
+                                        <rt>80</rt>
+                                        <rp>!Oops!</rp>
+                                        Hg
+                                    </ruby>
+                                    <strong>Mercury</strong>
+                                    <tt>200.59</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>80</rt>
+                                        <rp>!Oops!</rp>
+                                        Hg
+                                    </ruby>
+                                    <strong>Mercury</strong>
+                                    <tt>200.59</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="basicmet" title="Thallium" href="&link;Thallium">
+                                    <ruby>
+                                        <rt>81</rt>
+                                        <rp>!Oops!</rp>
+                                        Tl
+                                    </ruby>
+                                    <strong>Thallium</strong>
+                                    <tt>204.3833</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>81</rt>
+                                        <rp>!Oops!</rp>
+                                        Tl
+                                    </ruby>
+                                    <strong>Thallium</strong>
+                                    <tt>204.3833</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="basicmet" title="Plumbum (Lead)" href="&link;Lead">
+                                    <ruby>
+                                        <rt>82</rt>
+                                        <rp>!Oops!</rp>
+                                        Pb
+                                    </ruby>
+                                    <strong>Lead</strong>
+                                    <tt>207.2</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>82</rt>
+                                        <rp>!Oops!</rp>
+                                        Pb
+                                    </ruby>
+                                    <strong>Lead</strong>
+                                    <tt>207.2</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="basicmet" title="Bismuth" href="&link;Bismuth">
+                                    <ruby>
+                                        <rt>83</rt>
+                                        <rp>!Oops!</rp>
+                                        Bi
+                                    </ruby>
+                                    <strong>Bismuth</strong>
+                                    <tt>208.9804</tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>83</rt>
+                                        <rp>!Oops!</rp>
+                                        Bi
+                                    </ruby>
+                                    <strong>Bismuth</strong>
+                                    <tt>208.9804</tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="semimet" title="Polonium" href="&link;Polonium">
+                                    <ruby>
+                                        <rt>84</rt>
+                                        <rp>!Oops!</rp>
+                                        Po
+                                    </ruby>
+                                    <strong>Polonium</strong>
+                                    <tt><q>209</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>84</rt>
+                                        <rp>!Oops!</rp>
+                                        Po
+                                    </ruby>
+                                    <strong>Polonium</strong>
+                                    <tt><q>209</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="halogen" title="Astatine" href="&link;Astatine">
+                                    <ruby>
+                                        <rt>85</rt>
+                                        <rp>!Oops!</rp>
+                                        At
+                                    </ruby>
+                                    <strong>Astatine</strong>
+                                    <tt><q>210</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>85</rt>
+                                        <rp>!Oops!</rp>
+                                        At
+                                    </ruby>
+                                    <strong>Astatine</strong>
+                                    <tt><q>210</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="noblegas" title="Radon" href="&link;Radon">
+                                    <ruby>
+                                        <rt>86</rt>
+                                        <rp>!Oops!</rp>
+                                        Rn
+                                    </ruby>
+                                    <strong>Radon</strong>
+                                    <tt><q>222</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>86</rt>
+                                        <rp>!Oops!</rp>
+                                        Rn
+                                    </ruby>
+                                    <strong>Radon</strong>
+                                    <tt><q>222</q></tt>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="horiz">7</th>
+                            <td>
+                                <a class="alkalimet" title="Francium" href="&link;Francium">
+                                    <ruby>
+                                        <rt>87</rt>
+                                        <rp>!Oops!</rp>
+                                        Fr
+                                    </ruby>
+                                    <strong>Francium</strong>
+                                    <tt><q>223</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>87</rt>
+                                        <rp>!Oops!</rp>
+                                        Fr
+                                    </ruby>
+                                    <strong>Francium</strong>
+                                    <tt><q>223</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="alkalinemet" title="Radium" href="&link;Radium">
+                                    <ruby>
+                                        <rt>88</rt>
+                                        <rp>!Oops!</rp>
+                                        Ra
+                                    </ruby>
+                                    <strong>Radium</strong>
+                                    <tt><q>226</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>88</rt>
+                                        <rp>!Oops!</rp>
+                                        Ra
+                                    </ruby>
+                                    <strong>Radium</strong>
+                                    <tt><q>226</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="actinide group" title="Actinides" href="&link;Actinide">
+                                    <ruby>
+                                       89-103
+                                    </ruby>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                    Actinides
+                                    </ruby>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Rutherfordium" href="&link;Rutherfordium">
+                                    <ruby>
+                                        <rt>104</rt>
+                                        <rp>!Oops!</rp>
+                                        Rf
+                                    </ruby>
+                                    <strong>Rutherfordium</strong>
+                                    <tt><q>261</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>104</rt>
+                                        <rp>!Oops!</rp>
+                                        Rf
+                                    </ruby>
+                                    <strong>Rutherfordium</strong>
+                                    <tt><q>261</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Dubnium" href="&link;Dubnium">
+                                    <ruby>
+                                        <rt>105</rt>
+                                        <rp>!Oops!</rp>
+                                        Db
+                                    </ruby>
+                                    <strong>Dubnium</strong>
+                                    <tt><q>262</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>105</rt>
+                                        <rp>!Oops!</rp>
+                                        Db
+                                    </ruby>
+                                    <strong>Dubnium</strong>
+                                    <tt><q>262</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Seaborgium" href="&link;Seaborgium">
+                                    <ruby>
+                                        <rt>106</rt>
+                                        <rp>!Oops!</rp>
+                                        Sg
+                                    </ruby>
+                                    <strong>Seaborgium</strong>
+                                    <tt><q>266</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>106</rt>
+                                        <rp>!Oops!</rp>
+                                        Sg
+                                    </ruby>
+                                    <strong>Seaborgium</strong>
+                                    <tt><q>266</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Bohrium" href="&link;Bohrium">
+                                    <ruby>
+                                        <rt>107</rt>
+                                        <rp>!Oops!</rp>
+                                        Bh
+                                    </ruby>
+                                    <strong>Bohrium</strong>
+                                    <tt><q>264</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>107</rt>
+                                        <rp>!Oops!</rp>
+                                        Bh
+                                    </ruby>
+                                    <strong>Bohrium</strong>
+                                    <tt><q>264</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Hassium" href="&link;Hassium">
+                                    <ruby>
+                                        <rt>108</rt>
+                                        <rp>!Oops!</rp>
+                                        Hs
+                                    </ruby>
+                                    <strong>Hassium</strong>
+                                    <tt><q>277</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>108</rt>
+                                        <rp>!Oops!</rp>
+                                        Hs
+                                    </ruby>
+                                    <strong>Hassium</strong>
+                                    <tt><q>277</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Meitnerium" href="&link;Meitnerium">
+                                    <ruby>
+                                        <rt>109</rt>
+                                        <rp>!Oops!</rp>
+                                        Mt
+                                    </ruby>
+                                    <strong>Meitnerium</strong>
+                                    <tt><q>268</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>109</rt>
+                                        <rp>!Oops!</rp>
+                                        Mt
+                                    </ruby>
+                                    <strong>Meitnerium</strong>
+                                    <tt><q>268</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Darmstadtium" href="&link;Darmstadtium">
+                                    <ruby>
+                                        <rt>110</rt>
+                                        <rp>!Oops!</rp>
+                                        Rg
+                                    </ruby>
+                                    <strong>Darmstadtium</strong>
+                                    <tt><q>281</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>110</rt>
+                                        <rp>!Oops!</rp>
+                                        Ds
+                                    </ruby>
+                                    <strong>Darmstadtium</strong>
+                                    <tt><q>281</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Roentgenium" href="&link;Roentgenium">
+                                    <ruby>
+                                        <rt>111</rt>
+                                        <rp>!Oops!</rp>
+                                        Rg
+                                    </ruby>
+                                    <strong>Roentgenium</strong>
+                                    <tt><q>281</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>111</rt>
+                                        <rp>!Oops!</rp>
+                                        Rg
+                                    </ruby>
+                                    <strong>Roentgenium</strong>
+                                    <tt><q>281</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="tmet" title="Copernicium" href="&link;Copernicium">
+                                    <ruby>
+                                        <rt>112</rt>
+                                        <rp>!Oops!</rp>
+                                        Cn
+                                    </ruby>
+                                    <strong>Copernicium</strong>
+                                    <tt><q>285</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>112</rt>
+                                        <rp>!Oops!</rp>
+                                        Cn
+                                    </ruby>
+                                    <strong>Coper­nicium</strong>
+                                    <tt><q>285</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="basicmet" title="Ununtrium" href="&link;Ununtrium">
+                                    <ruby>
+                                        <rt>113</rt>
+                                        <rp>!Oops!</rp>
+                                        Uut
+                                    </ruby>
+                                    <strong>Ununtrium</strong>
+                                    <tt><q>286</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>113</rt>
+                                        <rp>!Oops!</rp>
+                                        Uut
+                                    </ruby>
+                                    <strong>Ununtrium</strong>
+                                    <tt><q>286</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="basicmet" title="Flerovium" href="&link;Flerovium">
+                                    <ruby>
+                                        <rt>114</rt>
+                                        <rp>!Oops!</rp>
+                                        Fl
+                                    </ruby>
+                                    <strong>Flerovium</strong>
+                                    <tt><q>289</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>114</rt>
+                                        <rp>!Oops!</rp>
+                                        Fl
+                                    </ruby>
+                                    <strong>Flerovium</strong>
+                                    <tt><q>289</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="basicmet" title="Ununpentiu" href="&link;Ununpentiu">
+                                    <ruby>
+                                        <rt>115</rt>
+                                        <rp>!Oops!</rp>
+                                        Uup
+                                    </ruby>
+                                    <strong>Ununpentium</strong>
+                                    <tt><q>289</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>115</rt>
+                                        <rp>!Oops!</rp>
+                                        Uup
+                                    </ruby>
+                                    <strong>Ununpentium</strong>
+                                    <tt><q>289</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="basicmet" title="Livermorium" href="&link;Livermorium">
+                                    <ruby>
+                                        <rt>116</rt>
+                                        <rp>!Oops!</rp>
+                                        Lv
+                                    </ruby>
+                                    <strong>Livermorium</strong>
+                                    <tt><q>293</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>116</rt>
+                                        <rp>!Oops!</rp>
+                                        Lv
+                                    </ruby>
+                                    <strong>Livermorium</strong>
+                                    <tt><q>293</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="halogen" title="Ununseptium" href="&link;Ununseptium">
+                                    <ruby>
+                                        <rt>117</rt>
+                                        <rp>!Oops!</rp>
+                                        Uus
+                                    </ruby>
+                                    <strong>Ununseptium</strong>
+                                    <tt><q>294</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>117</rt>
+                                        <rp>!Oops!</rp>
+                                        Uus
+                                    </ruby>
+                                    <strong>Ununseptium</strong>
+                                    <tt><q>294</q></tt>
+                                </div>
+                            </td>
+                            <td>
+                                <a class="noblegas" title="Ununoctium" href="&link;Ununoctium">
+                                    <ruby>
+                                        <rt>118</rt>
+                                        <rp>!Oops!</rp>
+                                        Uuo
+                                    </ruby>
+                                    <strong>Ununoctium</strong>
+                                    <tt><q>294</q></tt>
+                                </a>
+                                <div class="hid">
+                                    <ruby>
+                                        <rt>118</rt>
+                                        <rp>!Oops!</rp>
+                                        Uuo
+                                    </ruby>
+                                    <strong>Ununoctium</strong>
+                                    <tt><q>294</q></tt>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <!--SERIES-->
+                        <td align="center" class="series" colspan="19">
+                            <tr>
+                                <th>Lanthanide Series</th>
+                                <td>
+                                    <a class="lanthanide" title="Lanthanum" href="&link;Lanthanum">
+                                        <ruby>
+                                            <rt>57</rt>
+                                            <rp>!Oops!</rp>
+                                            La
+                                        </ruby>
+                                        <strong>Lanthanum</strong>
+                                        <tt>138.9055</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>57</rt>
+                                            <rp>!Oops!</rp>
+                                            La
+                                        </ruby>
+                                        <strong>Lanthanum</strong>
+                                        <tt>138.9055</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Cerium" href="&link;Cerium">
+                                        <ruby>
+                                            <rt>58</rt>
+                                            <rp>!Oops!</rp>
+                                            Ce
+                                        </ruby>
+                                        <strong>Cerium</strong>
+                                        <tt>140.116</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>58</rt>
+                                            <rp>!Oops!</rp>
+                                            Ce
+                                        </ruby>
+                                        <strong>Cerium</strong>
+                                        <tt>140.116</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Praseodymium" href="&link;Praseodymium">
+                                        <ruby>
+                                            <rt>59</rt>
+                                            <rp>!Oops!</rp>
+                                            Pr
+                                        </ruby>
+                                        <strong>Praseodymium</strong>
+                                        <tt>140.9077</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>59</rt>
+                                            <rp>!Oops!</rp>
+                                            Pr
+                                        </ruby>
+                                        <strong>Praseodymium</strong>
+                                        <tt>140.9077</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Neodymium" href="&link;Neodymium">
+                                        <ruby>
+                                            <rt>60</rt>
+                                            <rp>!Oops!</rp>
+                                            Nd
+                                        </ruby>
+                                        <strong>Neodymium</strong>
+                                        <tt>144.24</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>60</rt>
+                                            <rp>!Oops!</rp>
+                                            Nd
+                                        </ruby>
+                                        <strong>Neodymium</strong>
+                                        <tt>144.24</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Promethium" href="&link;Promethium">
+                                        <ruby>
+                                            <rt>61</rt>
+                                            <rp>!Oops!</rp>
+                                            Pm
+                                        </ruby>
+                                        <strong>Promethium</strong>
+                                        <tt><q>145</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>61</rt>
+                                            <rp>!Oops!</rp>
+                                            Pm
+                                        </ruby>
+                                        <strong>Promethium</strong>
+                                        <tt><q>145</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Samarium" href="&link;Samarium">
+                                        <ruby>
+                                            <rt>62</rt>
+                                            <rp>!Oops!</rp>
+                                            Sm
+                                        </ruby>
+                                        <strong>Samarium</strong>
+                                        <tt>150.36</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>62</rt>
+                                            <rp>!Oops!</rp>
+                                            Sm
+                                        </ruby>
+                                        <strong>Samarium</strong>
+                                        <tt>150.36</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Europium" href="&link;Europium">
+                                        <ruby>
+                                            <rt>63</rt>
+                                            <rp>!Oops!</rp>
+                                            Eu
+                                        </ruby>
+                                        <strong>Europium</strong>
+                                        <tt>151.964</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>63</rt>
+                                            <rp>!Oops!</rp>
+                                            Eu
+                                        </ruby>
+                                        <strong>Europium</strong>
+                                        <tt>151.964</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Gadolinium" href="&link;Gadolinium">
+                                        <ruby>
+                                            <rt>64</rt>
+                                            <rp>!Oops!</rp>
+                                            Gd
+                                        </ruby>
+                                        <strong>Gadolinium</strong>
+                                        <tt>157.25</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>64</rt>
+                                            <rp>!Oops!</rp>
+                                            Gd
+                                        </ruby>
+                                        <strong>Gadolinium</strong>
+                                        <tt>157.25</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Terbium" href="&link;Terbium">
+                                        <ruby>
+                                            <rt>65</rt>
+                                            <rp>!Oops!</rp>
+                                            Tb
+                                        </ruby>
+                                        <strong>Terbium</strong>
+                                        <tt>158.9253</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>65</rt>
+                                            <rp>!Oops!</rp>
+                                            Tb
+                                        </ruby>
+                                        <strong>Terbium</strong>
+                                        <tt>158.9253</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Dysprosium" href="&link;Dysprosium">
+                                        <ruby>
+                                            <rt>66</rt>
+                                            <rp>!Oops!</rp>
+                                            Dy
+                                        </ruby>
+                                        <strong>Dysprosium</strong>
+                                        <tt>162.5</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>66</rt>
+                                            <rp>!Oops!</rp>
+                                            Dy
+                                        </ruby>
+                                        <strong>Dysprosium</strong>
+                                        <tt>162.5</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Holmium" href="&link;Holmium">
+                                        <ruby>
+                                            <rt>67</rt>
+                                            <rp>!Oops!</rp>
+                                            Ho
+                                        </ruby>
+                                        <strong>Holmium</strong>
+                                        <tt>164.9303</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>67</rt>
+                                            <rp>!Oops!</rp>
+                                            Ho
+                                        </ruby>
+                                        <strong>Holmium</strong>
+                                        <tt>164.9303</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Erbium" href="&link;Erbium">
+                                        <ruby>
+                                            <rt>68</rt>
+                                            <rp>!Oops!</rp>
+                                            Er
+                                        </ruby>
+                                        <strong>Erbium</strong>
+                                        <tt>167.259</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>68</rt>
+                                            <rp>!Oops!</rp>
+                                            Er
+                                        </ruby>
+                                        <strong>Erbium</strong>
+                                        <tt>167.259</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Thulium" href="&link;Thulium">
+                                        <ruby>
+                                            <rt>69</rt>
+                                            <rp>!Oops!</rp>
+                                            Tm
+                                        </ruby>
+                                        <strong>Thulium</strong>
+                                        <tt>168.9342</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>69</rt>
+                                            <rp>!Oops!</rp>
+                                            Tm
+                                        </ruby>
+                                        <strong>Thulium</strong>
+                                        <tt>168.9342</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Ytterbium" href="&link;Ytterbium">
+                                        <ruby>
+                                            <rt>70</rt>
+                                            <rp>!Oops!</rp>
+                                            Yb
+                                        </ruby>
+                                        <strong>Ytterbium</strong>
+                                        <tt>173.04</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>70</rt>
+                                            <rp>!Oops!</rp>
+                                            Yb
+                                        </ruby>
+                                        <strong>Ytterbium</strong>
+                                        <tt>173.04</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="lanthanide" title="Lutetium" href="&link;Lutetium">
+                                        <ruby>
+                                            <rt>71</rt>
+                                            <rp>!Oops!</rp>
+                                            Lu
+                                        </ruby>
+                                        <strong>Lutetium</strong>
+                                        <tt>174.967</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>71</rt>
+                                            <rp>!Oops!</rp>
+                                            Lu
+                                        </ruby>
+                                        <strong>Lutetium</strong>
+                                        <tt>174.967</tt>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>Actinide Series</th>
+                                <td>
+                                    <a class="actinide" title="Actinium" href="&link;Actinium">
+                                        <ruby>
+                                            <rt>89</rt>
+                                            <rp>!Oops!</rp>
+                                            Ac
+                                        </ruby>
+                                        <strong>Actinium</strong>
+                                        <tt><q>227</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>89</rt>
+                                            <rp>!Oops!</rp>
+                                            Ac
+                                        </ruby>
+                                        <strong>Actinium</strong>
+                                        <tt><q>227</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Thorium" href="&link;Thorium">
+                                        <ruby>
+                                            <rt>90</rt>
+                                            <rp>!Oops!</rp>
+                                            Th
+                                        </ruby>
+                                        <strong>Thorium</strong>
+                                        <tt>232.0381</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>90</rt>
+                                            <rp>!Oops!</rp>
+                                            Th
+                                        </ruby>
+                                        <strong>Thorium</strong>
+                                        <tt>232.0381</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Protactinium" href="&link;Protactinium">
+                                        <ruby>
+                                            <rt>91</rt>
+                                            <rp>!Oops!</rp>
+                                            Pa
+                                        </ruby>
+                                        <strong>Protactinium</strong>
+                                        <tt>231.0359</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>91</rt>
+                                            <rp>!Oops!</rp>
+                                            Pa
+                                        </ruby>
+                                        <strong>Protactinium</strong>
+                                        <tt>231.0359</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Uranium" href="&link;Uranium">
+                                        <ruby>
+                                            <rt>92</rt>
+                                            <rp>!Oops!</rp>
+                                            U
+                                        </ruby>
+                                        <strong>Uranium</strong>
+                                        <tt>238.0289</tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>92</rt>
+                                            <rp>!Oops!</rp>
+                                            U
+                                        </ruby>
+                                        <strong>Uranium</strong>
+                                        <tt>238.0289</tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Neptunium" href="&link;Neptunium">
+                                        <ruby>
+                                            <rt>93</rt>
+                                            <rp>!Oops!</rp>
+                                            Np
+                                        </ruby>
+                                        <strong>Neptunium</strong>
+                                        <tt><q>237</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>93</rt>
+                                            <rp>!Oops!</rp>
+                                            Np
+                                        </ruby>
+                                        <strong>Neptunium</strong>
+                                        <tt><q>237</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Plutonium" href="&link;Plutonium">
+                                        <ruby>
+                                            <rt>94</rt>
+                                            <rp>!Oops!</rp>
+                                            Pu
+                                        </ruby>
+                                        <strong>Plutonium</strong>
+                                        <tt><q>244</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>94</rt>
+                                            <rp>!Oops!</rp>
+                                            Pu
+                                        </ruby>
+                                        <strong>Plutonium</strong>
+                                        <tt><q>244</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Americium" href="&link;Americium">
+                                        <ruby>
+                                            <rt>95</rt>
+                                            <rp>!Oops!</rp>
+                                            Am
+                                        </ruby>
+                                        <strong>Americium</strong>
+                                        <tt><q>243</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>95</rt>
+                                            <rp>!Oops!</rp>
+                                            Am
+                                        </ruby>
+                                        <strong>Americium</strong>
+                                        <tt><q>243</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Curium" href="&link;Curium">
+                                        <ruby>
+                                            <rt>96</rt>
+                                            <rp>!Oops!</rp>
+                                            Cm
+                                        </ruby>
+                                        <strong>Curium</strong>
+                                        <tt><q>247</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>96</rt>
+                                            <rp>!Oops!</rp>
+                                            Cm
+                                        </ruby>
+                                        <strong>Curium</strong>
+                                        <tt><q>247</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Berkelium" href="&link;Berkelium">
+                                        <ruby>
+                                            <rt>97</rt>
+                                            <rp>!Oops!</rp>
+                                            Bk
+                                        </ruby>
+                                        <strong>Berkelium</strong>
+                                        <tt><q>247</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>97</rt>
+                                            <rp>!Oops!</rp>
+                                            Bk
+                                        </ruby>
+                                        <strong>Berkelium</strong>
+                                        <tt><q>247</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Californium" href="&link;Californium">
+                                        <ruby>
+                                            <rt>98</rt>
+                                            <rp>!Oops!</rp>
+                                            Cf
+                                        </ruby>
+                                        <strong>Californium</strong>
+                                        <tt><q>251</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>98</rt>
+                                            <rp>!Oops!</rp>
+                                            Cf
+                                        </ruby>
+                                        <strong>Californium</strong>
+                                        <tt><q>251</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Einsteinium" href="&link;Einsteinium">
+                                        <ruby>
+                                            <rt>99</rt>
+                                            <rp>!Oops!</rp>
+                                            Es
+                                        </ruby>
+                                        <strong>Einsteinium</strong>
+                                        <tt><q>252</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>99</rt>
+                                            <rp>!Oops!</rp>
+                                            Es
+                                        </ruby>
+                                        <strong>Einsteinium</strong>
+                                        <tt><q>252</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Fermium" href="&link;Fermium">
+                                        <ruby>
+                                            <rt>100</rt>
+                                            <rp>!Oops!</rp>
+                                            Fm
+                                        </ruby>
+                                        <strong>Fermium</strong>
+                                        <tt><q>257</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>100</rt>
+                                            <rp>!Oops!</rp>
+                                            Fm
+                                        </ruby>
+                                        <strong>Fermium</strong>
+                                        <tt><q>257</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Mendelevium" href="&link;Mendelevium">
+                                        <ruby>
+                                            <rt>101</rt>
+                                            <rp>!Oops!</rp>
+                                            Md
+                                        </ruby>
+                                        <strong>Mendelevium</strong>
+                                        <tt><q>258</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>101</rt>
+                                            <rp>!Oops!</rp>
+                                            Md
+                                        </ruby>
+                                        <strong>Mendelevium</strong>
+                                        <tt><q>258</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Nobelium" href="&link;Nobelium">
+                                        <ruby>
+                                            <rt>102</rt>
+                                            <rp>!Oops!</rp>
+                                            No
+                                        </ruby>
+                                        <strong>Nobelium</strong>
+                                        <tt><q>259</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>102</rt>
+                                            <rp>!Oops!</rp>
+                                            No
+                                        </ruby>
+                                        <strong>Nobelium</strong>
+                                        <tt><q>259</q></tt>
+                                    </div>
+                                </td>
+                                <td>
+                                    <a class="actinide" title="Lawrencium" href="#">
+                                        <ruby>
+                                            <rt>103</rt>
+                                            <rp>!Oops!</rp>
+                                            Lr
+                                        </ruby>
+                                        <strong>Lawrencium</strong>
+                                        <tt><q>262</q></tt>
+                                    </a>
+                                    <div class="hid">
+                                        <ruby>
+                                            <rt>103</rt>
+                                            <rp>!Oops!</rp>
+                                            Lr
+                                        </ruby>
+                                        <strong>Lawrencium</strong>
+                                        <tt><q>262</q></tt>
+                                    </div>
+                                </td>
+                            </tr>
+                        </td>
+                    </tbody>
+                    <tfoot>
+                        <td align="center" colspan="19">
+                            <tr>
+                                <td class="actinide">Actinides</td>
+                                <td class="alkalimet">Alkali metals</td>
+                                <td class="alkalinemet">Alkaline metals</td>
+                                <td class="halogen">Halogens</td>
+                                <td class="lanthanide">Lanthanides</td>
+                            </tr>
+                            <tr>
+                                <td class="semimet">Semi metals</td>
+                                <td class="noblegas">Noble gases</td>
+                                <td class="nonmet">Nonmetals</td>
+                                <td class="basicmet">Basic metals</td>
+                                <td class="tmet">Transition metals</td>
+                            </tr>
+                        </td>
+                    </tfoot>
+            </table>
+        </main>
+    </body>
+</html>

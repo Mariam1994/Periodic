@@ -1,0 +1,139 @@
+
+/*Preloader*/
+
+#preloader {
+    width: 100%;
+    height: 100%;
+
+    position: fixed;
+    z-index: 100;
+
+    background: #fcfcfc;                
+} 
+.cssload-triangles {
+	height: 79px;
+	width: 88px;
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.cssload-tri {
+	position: absolute;
+	border-top: 26px solid rgb(0,189,158);
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 0px;
+	animation: cssload-pulse 862.5ms ease-in infinite;
+}
+.cssload-tri.cssload-invert {
+	border-top: 0px;
+	border-bottom: 26px solid rgb(0,189,158);
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+}
+.cssload-tri:nth-child(1) {
+	left: 29px;
+}
+.cssload-tri:nth-child(2) {
+	left: 15px;
+	top: 26px;
+	animation-delay: -143.75ms;
+}
+.cssload-tri:nth-child(3) {
+	left: 29px;
+	top: 26px;
+}
+.cssload-tri:nth-child(4) {
+	left: 44px;
+	top: 26px;
+	animation-delay: -718.75ms;
+}
+.cssload-tri:nth-child(5) {
+	top: 53px;
+	animation-delay: -287.5ms;
+}
+.cssload-tri:nth-child(6) {
+	top: 53px;
+	left: 15px;
+	animation-delay: -287.5ms;
+}
+.cssload-tri:nth-child(7) {
+	top: 53px;
+	left: 29px;
+	animation-delay: -431.25ms;
+}
+.cssload-tri:nth-child(8) {
+	top: 53px;
+	left: 44px;
+	animation-delay: -575ms;
+}
+.cssload-tri:nth-child(9) {
+	top: 53px;
+	left: 58px;
+	animation-delay: -575ms;
+}
+
+
+@keyframes cssload-pulse {
+	0% {
+		opacity: 1;
+	}
+	16.666% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+/*Preloader*/
+
+
+
+
+
+
+
+
+
+
+
+.parent{
+	font-family: arial, arial unicode ms, sans-serif;
+
+	padding-top: 150px;
+	padding-right: 8px;
+}
+.parent, .child{
+	border-spacing: 4px;
+}
+.p1{
+	width: 150px;
+}
+.numb, tbody td a{
+	border-radius: 3px;
+}
+.first, .p1{
+	padding-right: 5px;
+}
+.teletype-prefix, .teletype-cursor{
+	color: #00bd9c;
+}
+#display{
+	width: 316.4px;
+	height: 189.5px;
+
+	position: relative;
+	top:15px;
+	left:28px;
+
+	color: #fff;
+	font-family: 'Montserrat', helvetica, sans-serif;
+	font-size: 11pt;
+	line-height: 1.6;
+
+	padding-top: 8px;
+	background: #222;
+}
